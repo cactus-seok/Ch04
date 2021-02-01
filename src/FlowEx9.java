@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class FlowEx9 {
 
 	public static void main(String[] args) {
-		char grade = ' ';
+		char grade = ' '; //grade 의 문자열 값을 공백으로 저장
 		
 		System.out.print("당신의 점수를 입력하세요.(1~100)");
 		
 		Scanner scanner = new Scanner(System.in);
-		int score = scanner.nextInt();
+		int score = scanner.nextInt(); //키보드를 통해 받은 정보를 score값에 저장
 		
-		switch(score) {
+		switch(score) { //score값에 따른 grade값 저장
 		case 100: case 99: case 98: case 97: case 96:
 		case 95: case 94: case 93: case 92: case 91: case 90:
 			grade = 'A';
